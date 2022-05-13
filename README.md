@@ -9,6 +9,8 @@ The purpose of this project is to build a model that classifies handwritten digi
 
 The Modeling phase was split into two parts. In the first part, the problem was simplified, and a model was trained to predict one digit – for example the number 5. This “5-detector” is an example of a binary classifier, capable of distinguishing between two classes, 5 and not-5. In the second part, explore multiclass classifiers was explored to predicts all classes. The following figure shows a few images from the MNIST dataset to give a feel for the complexity of the classification task. 
  
+![image](https://user-images.githubusercontent.com/25030435/168308265-e57cfc98-2b45-454e-9233-ae4cad8ae7f8.png)
+
 
 The CRISP-DM framework was used, and the project was split according to the 6 phases of the framework:  
 1. Business Understanding
@@ -50,13 +52,13 @@ Now how do we decide which threshold to use? It would be nice to have a way of k
 # Training Logistic Regression Model for Multiple Classes
 Unlike binary classification, there are no positive or negative classes. The overall accuracy obtained was 91.54%, and the precision, recall and F1 scores for all classes were also obtained.
 
-Macro F1
+Macro F1: 
 Macro averaging is perhaps the most straightforward amongst the numerous averaging methods. The macro-averaged F1 score (or macro F1 score) is computed by taking the mean of all the per-class F1 scores. This method treats all classes equally. The macro F1 score is 0.914 or 91.4%.
 
-Micro F1
+Micro F1: 
 Micro averaging computes a global average F1 score by counting the sums of the True Positives (TP), False Negatives (FN), and False Positives (FP). The macro F1 score is 0.915 or 91.5%.
 
-Weighted Average F1
+Weighted Average F1: 
 The last one is weighted-average F1 score. Unlike Macro F1, it takes the mean of all per-class F1 scores while considering each class’s support. Support refers to the number of actual occurrences of the class in the dataset. The macro F1 score is 9.156
 
 Which average should you choose?
@@ -70,3 +72,5 @@ At the evaluation phase, I evaluated the best model on the test set. Macro F1 Sc
  
 # Deployment 
 Below is the Project Workflow
+
+![Workflow](https://user-images.githubusercontent.com/25030435/168309032-a99fc630-47cb-4a27-9da2-235f965a3b25.jpg)
