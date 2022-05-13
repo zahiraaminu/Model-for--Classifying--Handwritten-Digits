@@ -73,4 +73,5 @@ At the evaluation phase, I evaluated the best model on the test set. Macro F1 Sc
 # Deployment 
 Below is the Project Workflow
 
-![Workflow](https://user-images.githubusercontent.com/25030435/168309032-a99fc630-47cb-4a27-9da2-235f965a3b25.jpg)
+![Workflow](https://user-images.githubusercontent.com/25030435/168309874-9c223752-159e-405b-93ce-b69bd35d7e1b.jpg)
+
